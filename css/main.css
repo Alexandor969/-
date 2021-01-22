@@ -1,0 +1,220 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2F343A;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* услуги */
+
+.services {
+    padding-top: 120px;
+}
+
+.container {
+    width: 1110px;
+    margin: 0px auto;
+}
+
+.line {
+    Width: 90px;
+    Height: 6px;
+    background-color: #C8A35F;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 40px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    margin-top: 40px;
+    text-transform: uppercase;
+}
+
+.services__list {
+    margin: 0;
+    padding: 0;
+    margin-top: 59px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.services__list-item {
+    Width: 276px;
+    Height: 180px;
+    background-color: #393F47;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 1px;
+    margin-top: 1px;
+}
+
+.services__list-img_bg {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color: #393F47;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.services__list-desc {
+    font-weight: bold;
+    font-size: 18px;
+    color: #fff;
+    margin-top: 23px;
+}
+
+.services__list-img-black {
+    display: none;
+}
+
+.services__list-item:hover {
+    background-color: #C8A35F;
+}
+
+.services__list-item:hover .services__list-img_bg {
+    background-color: #fff;
+}
+
+.services__list-item:hover path {
+    fill: #2F343A;
+}
+
+
+/* О компании */
+
+.company {
+    padding-top: 200px;
+}
+
+.company .container {
+    position: relative;
+    display: flex;
+}
+
+
+/* .container_aft:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 410px;
+    height: 482px;
+    background-color: #393F47;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    margin-top: 241px;
+} */
+
+.company__about {
+    width: 445px;
+}
+
+.company__about-desc {
+    font-size: 16px;
+    line-height: 23px;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.company__list {
+    padding: 0;
+    margin: 0;
+    margin-left: 60px;
+    width: 600px;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+}
+
+.company__list-item {
+    width: 200px;
+    height: 160px;
+    background-color: #FFFFFF;
+    border: 0.25px solid #C8A35F;
+}
+
+.company__list-item-car {
+    background: url(../img/car.png)#c4c4c4;
+    width: 200px;
+    height: 160px;
+    border: 0.25px solid #C8A35F;
+    position: relative;
+}
+
+.company__list-item-car_bg {
+    display: none;
+    position: relative;
+    background: rgba(0, 0, 0, 0.6);
+    width: 200px;
+    height: 160px;
+}
+
+.company__list-item-num {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 64px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 23px;
+}
+
+.company__list-item-title {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.company__list-item-desc {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.company__list-item:hover {
+    background-color: #C8A35F;
+    border: 0.25px solid #fff;
+}
+
+.company__list-item:hover .company__list-item-num {
+    color: #fff;
+}
+
+.company__list-item:hover .company__list-item-title {
+    color: #fff;
+}
+
+.company__list-item:hover .company__list-item-desc {
+    color: #fff;
+}
+
+.company__list-item-car:hover {
+    border: none;
+}
+
+.company__list-item-car:hover .company__list-item-car_bg {
+    display: block;
+}
+
+border: 0.25px solid#000;
