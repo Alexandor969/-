@@ -1,316 +1,589 @@
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #2F343A;
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-}
-
-* {
-    box-sizing: border-box;
-}
-
-
-/* услуги */
-
-.services {
-    padding-top: 120px;
-}
-
-.container {
-    width: 1110px;
-    margin: 0px auto;
-}
-
-.line {
-    Width: 90px;
-    Height: 6px;
-    background-color: #C8A35F;
-}
-
-.title {
-    font-weight: bold;
-    font-size: 40px;
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    margin-top: 40px;
-    text-transform: uppercase;
-}
-
-.services__list {
-    margin: 0;
-    padding: 0;
-    margin-top: 59px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.services__list-item {
-    Width: 24.9%;
-    Height: 180px;
-    background-color: #393F47;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 1px;
-    margin-top: 1px;
-    transition: all 0.3s ease;
-}
-
-.services__list-img_bg {
-    height: 70px;
-    width: 70px;
-    border-radius: 50%;
-    background-color: #393F47;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 35px;
-    transition: all 0.3s ease;
-}
-
-.services__list-desc {
-    font-weight: bold;
-    font-size: 18px;
-    color: #fff;
-    margin-top: 23px;
-}
-
-.services__list-item:hover {
-    background-color: #C8A35F;
-    cursor: pointer;
-}
-
-.services__list-item:hover .services__list-img_bg {
-    background-color: #fff;
-}
-
-.services__list-item:hover path {
-    fill: #2F343A;
-}
-
-
-/* О компании */
-
-.company {
-    padding-top: 200px;
-}
-
-.company .container {
-    position: relative;
-    display: flex;
-}
-
-.container_aft:after {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 410px;
-    height: 482px;
-    background-color: #393F47;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-}
-
-.company__about {
-    width: 445px;
-}
-
-.company__about-desc {
-    font-size: 16px;
-    line-height: 23px;
-    color: #FFFFFF;
-    margin: 0;
-    padding: 0;
-    margin-top: 30px;
-}
-
-.company__list {
-    padding: 0;
-    margin: 0;
-    margin-left: 60px;
-    width: 600px;
-    height: 320px;
-    display: flex;
-    flex-wrap: wrap;
-    list-style-type: none;
-}
-
-.company__list-item {
-    width: 200px;
-    height: 160px;
-    background-color: #FFFFFF;
-    border: 0.25px solid #C8A35F;
-    transition: all 0.3s ease;
-}
-
-.company__list-item-car {
-    width: 200px;
-    height: 160px;
-    border: 0.25px solid #C8A35F;
-    position: relative;
-    transition: all 0.3s ease;
-}
-
-.company__list-item-car-img {
-    width: 100%;
-    height: 100%;
-}
-
-.company__list-item-car_bg {
-    display: none;
-    position: relative;
-    background: rgba(0, 0, 0, 0.6);
-    width: 200px;
-    height: 160px;
-}
-
-.company__list-item-num {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 64px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-top: 23px;
-}
-
-.company__list-item-title {
-    font-size: 18px;
-    line-height: 21px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-}
-
-.company__list-item-desc {
-    font-size: 12px;
-    line-height: 14px;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-    margin-top: 5px;
-}
-
-.company__list-item:hover {
-    background-color: #C8A35F;
-    border: 0.25px solid #fff;
-    cursor: pointer;
-}
-
-.company__list-item:hover .company__list-item-num {
-    color: #fff;
-}
-
-.company__list-item:hover .company__list-item-title {
-    color: #fff;
-}
-
-.company__list-item:hover .company__list-item-desc {
-    color: #fff;
-}
-
-.company__list-item-car:hover {
-    border: none;
-    cursor: pointer;
-}
-
-.company__list-item-car:hover .company__list-item-car_bg {
-    display: block;
-}
-
-
-/* Адаптив */
-
-@media screen and (max-width: 1109px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #2F343A;
+        font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    }
+    
+    * {
+        box-sizing: border-box;
+    }
+    
     .container {
-        width: 724px;
-    }
-    .line {
-        margin-left: 13%;
-    }
-    .title {
-        margin-left: 13%;
-    }
-    .services__list {
-        justify-content: center;
-    }
-    .company .container {
-        flex-direction: column;
-    }
-    .company__about {
-        width: 80%;
-        margin-left: 5%;
-    }
-    .company__about-desc {
-        margin-left: 10%;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .company__list {
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 723px) {
-    .container {
-        width: 444px;
-    }
-    .services__list-item {
-        Width: 40%;
-    }
-    .company__list {
-        margin-left: 0;
-        margin-right: 60px;
-    }
-    .company__list-item {
-        width: 40%;
-    }
-    .company__list-item-car {
-        width: 40%;
-    }
-    .company__list-item-car_bg {
-        width: 100%;
-    }
-}
-
-@media screen and (max-width: 443px) {
-    .container {
-        width: 318px;
+        width: 1110px;
         margin: 0px auto;
     }
-    .line {
-        margin-left: 22%;
+    
+    .container_flex {
+        display: flex;
     }
-    .title {
-        margin-left: 22%;
-        font-size: 28px;
+    /* Хедер */
+    /* языковое меню */
+    
+    .links {
+        background-color: #C8A35F;
+        font-size: 12px;
     }
-    .services__list {
-        width: 90%;
-        margin-left: 3%;
+    
+    .links a {
+        color: #fff;
+        text-decoration: none;
     }
-    .services__list-item {
-        Width: 60%;
+    
+    .links__menu {
+        display: flex;
+        justify-content: space-between;
+        padding: 16px 0px;
     }
-    .container_aft:after {
+    
+    .links__menu-language {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        list-style-type: none;
+        width: 82px;
+        justify-content: space-between;
+        text-transform: uppercase;
+    }
+    /* шапка */
+    
+    .head {
+        padding: 27px 0px;
+    }
+    
+    .head .container {
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .head a {
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    .head__left {
+        width: 352px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .head__line {
+        width: 46px;
+        height: 0px;
+        border: 1px solid #F2F2F2;
+        transform: rotate(90deg);
+    }
+    
+    .head__office {
+        width: 132px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+    }
+    
+    .head__menu {
+        width: 412px;
+    }
+    
+    .head__menu-list {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .head__menu-list-item {
+        font-size: 14px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+    
+    .head__burg-menu {
         display: none;
     }
-    .company__about {
-        margin-left: 0;
+    /* первый экран */
+    
+    .baner {
+        background: url(../img/Rectangle\ 2.jpg)no-repeat center top / cover;
+        height: 620px;
+        padding-top: 155px;
     }
-    .company__about-desc {
-        margin-left: 20%;
-        text-align: center;
-        margin-top: 20px;
-    }
-    .company__list {
-        flex-wrap: nowrap;
+    
+    .baner .container {
         flex-direction: column;
-        flex: none;
-        margin-left: 10%;
+        align-items: center;
     }
-}
+    
+    .baner-block {
+        width: 920px;
+        height: 245px;
+        border: 1px solid #C8A35F;
+        display: flex;
+        line-height: 75px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .baner__title {
+        padding: 0;
+        margin: 0;
+        font-size: 64px;
+        text-align: center;
+        line-height: 75px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #fff;
+        margin-top: 45px;
+    }
+    
+    .baner__desc {
+        padding: 0;
+        margin: 0;
+        line-height: 28px;
+        font-size: 18px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-top: 25px;
+        width: 80%;
+    }
+    
+    .baner__scroll {
+        margin-top: 140px;
+    }
+    /* Грузоперевозки */
+    
+    .transportation {
+        background: url(../img/services.png)no-repeat center top / cover;
+        height: 561px;
+        padding-top: 120px;
+    }
+    
+    .transportation .container {
+        justify-content: space-between;
+    }
+    
+    .transportation__content {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .title__line {
+        Width: 90px;
+        Height: 6px;
+        background-color: #C8A35F;
+    }
+    
+    .title__desc {
+        font-weight: bold;
+        font-size: 40px;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+        margin-top: 40px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        line-height: 49px;
+    }
+    
+    .transportation__content-desc {
+        font-size: 18px;
+        line-height: 28px;
+        color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+    }
+    
+    .transportation__content-btn {
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        background-color: #2F343A;
+        text-decoration: none;
+        width: 220px;
+        height: 55px;
+        padding-top: 18px;
+        margin-top: 50px;
+        transition: all 0.3s ease;
+    }
+    
+    .transportation__content-btn:hover {
+        background: #C8A35F;
+    }
+    
+    .transportation__img {
+        margin-top: 46px;
+    }
+    /* услуги */
+    
+    .services {
+        padding-top: 120px;
+    }
+    
+    .services__list {
+        margin: 0;
+        padding: 0;
+        margin-top: 59px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .services__list-item {
+        Width: 24.9%;
+        Height: 180px;
+        background-color: #393F47;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 1px;
+        margin-top: 1px;
+        transition: all 0.3s ease;
+    }
+    
+    .services__list-img_bg {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color: #393F47;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 35px;
+        transition: all 0.3s ease;
+    }
+    
+    .services__list-desc {
+        font-weight: bold;
+        font-size: 18px;
+        color: #fff;
+        margin-top: 23px;
+    }
+    
+    .services__list-item:hover {
+        background-color: #C8A35F;
+        cursor: pointer;
+    }
+    
+    .services__list-item:hover .services__list-img_bg {
+        background-color: #fff;
+    }
+    
+    .services__list-item:hover path {
+        fill: #2F343A;
+    }
+    /* О компании */
+    
+    .company {
+        padding-top: 200px;
+    }
+    
+    .company .container {
+        position: relative;
+        display: flex;
+    }
+    
+    .container_aft:after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 410px;
+        height: 482px;
+        background-color: #393F47;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: -1;
+    }
+    
+    .company__about {
+        width: 445px;
+    }
+    
+    .company__about-desc {
+        font-size: 16px;
+        line-height: 23px;
+        color: #FFFFFF;
+        margin: 0;
+        padding: 0;
+        margin-top: 30px;
+    }
+    
+    .company__list {
+        padding: 0;
+        margin: 0;
+        margin-left: 60px;
+        width: 600px;
+        height: 320px;
+        display: flex;
+        flex-wrap: wrap;
+        list-style-type: none;
+    }
+    
+    .company__list-item {
+        width: 200px;
+        height: 160px;
+        background-color: #FFFFFF;
+        border: 0.25px solid #C8A35F;
+        transition: all 0.3s ease;
+    }
+    
+    .company__list-item-car {
+        width: 200px;
+        height: 160px;
+        border: 0.25px solid #C8A35F;
+        position: relative;
+        transition: all 0.3s ease;
+    }
+    
+    .company__list-item-car-img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .company__list-item-car_bg {
+        display: none;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.6);
+        width: 200px;
+        height: 160px;
+        top: 0;
+        left: 0;
+    }
+    
+    .company__list-item-num {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 64px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 23px;
+    }
+    
+    .company__list-item-title {
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .company__list-item-desc {
+        font-size: 12px;
+        line-height: 14px;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        margin-top: 5px;
+    }
+    
+    .company__list-item:hover {
+        background-color: #C8A35F;
+        border: 0.25px solid #fff;
+        cursor: pointer;
+    }
+    
+    .company__list-item:hover .company__list-item-num {
+        color: #fff;
+    }
+    
+    .company__list-item:hover .company__list-item-title {
+        color: #fff;
+    }
+    
+    .company__list-item:hover .company__list-item-desc {
+        color: #fff;
+    }
+    
+    .company__list-item-car:hover {
+        border: none;
+        cursor: pointer;
+    }
+    
+    .company__list-item-car:hover .company__list-item-car_bg {
+        display: block;
+    }
+    /* карта */
+    
+    .maps {
+        background: url(../img/maps.jpg)no-repeat center top / cover;
+        height: 450px;
+        margin-top: 220px;
+    }
+    /* футер */
+    
+    .footer {
+        background: #C8A35F;
+        padding: 60px 0px;
+    }
+    
+    .footer .container {
+        justify-content: space-between;
+    }
+    
+    .footer__address-desc {
+        padding: 0;
+        margin: 0;
+        color: #F2F2F2;
+        opacity: 0.8;
+        font-size: 14px;
+        line-height: 16px;
+    }
+    
+    .footer__address-email {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 16px;
+        color: #2F343A;
+    }
+    
+    .footer__num a {
+        text-decoration: none;
+        font-size: 14px;
+        padding: 0;
+        margin: 0;
+        line-height: 16px;
+        color: #F2F2F2;
+        display: block;
+    }
+    
+    .footer__developer {
+        font-size: 14px;
+        line-height: 16px;
+        color: #2F343A;
+    }
+    /* Адаптив */
+    
+    @media screen and (max-width: 1109px) {
+        .container {
+            width: 100%;
+            padding: 0px 30px;
+        }
+        .head__menu {
+            width: 50px;
+        }
+        .head__menu-list {
+            display: none;
+        }
+        .head__burg-menu {
+            display: block;
+        }
+        .baner-block {
+            width: 100%;
+            padding: 0;
+        }
+        .baner__title {
+            font-size: 54px;
+        }
+        .baner__desc {
+            font-size: 16px;
+        }
+        .transportation .container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .transportation__content {
+            width: 40%;
+            align-items: center;
+        }
+        .transportation__content-desc {
+            text-align: center;
+        }
+        .transportation__content-btn {
+            background-color: #393F47;
+        }
+        .transportation__img {
+            display: none;
+        }
+        .services__list {
+            justify-content: space-between;
+        }
+        .services__list-item {
+            width: 49.8%;
+        }
+        .company .container {
+            flex-direction: column;
+            align-items: center;
+        }
+        .company__list {
+            justify-content: space-between;
+            margin-left: 0;
+        }
+        .company__list-item {
+            width: 49.8%;
+        }
+        .company__list-item-car {
+            width: 49.8%;
+        }
+        .company__list-item-car_bg {
+            width: 100%;
+        }
+        .footer__developer {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width: 723px) {
+        .container {
+            padding: 0px 15px;
+        }
+        .head__left {
+            width: calc(50%-30px);
+        }
+        .head__office {
+            width: 30%;
+        }
+        .head__office img {
+            display: none;
+        }
+        .baner__title {
+            font-size: 39px;
+            line-height: normal;
+            letter-spacing: 0.005em;
+        }
+        .baner__desc {
+            font-size: 13px;
+            line-height: 18px;
+        }
+        .transportation__content {
+            width: 60%;
+        }
+        .transportation__content .title__desc {
+            font-size: 25px;
+        }
+        .transportation__content-desc {
+            font-size: 14px;
+        }
+        .services__list-item {
+            width: 100%;
+        }
+        .container_aft:after {
+            display: none;
+        }
+        .company__about {
+            width: 100%;
+        }
+        .company__list {
+            width: 100%;
+        }
+        .company__list-item {
+            width: 100%;
+        }
+        .company__list-item-car {
+            width: 100%;
+        }
+        .maps {
+            margin-top: 590px;
+        }
+        .footer__address-desc {
+            font-size: 10px;
+        }
+        .footer__num {
+            display: none;
+        }
+    }
